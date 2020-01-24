@@ -1,0 +1,101 @@
+<app-alertas [mensaje]="model.mensaje"></app-alertas>
+<div class="card panel form">
+  <div class="card-body panel-body">
+    <form id="FormPanelComponent-login" name="login" onsubmit="return false;">
+      <fieldset>
+        <div id="panel_login">
+          <div id="login">
+            <h3>Login</h3>
+            <hr class="red">
+
+            <div class="">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="curp" class="control-label  ">Certificado (.cer):</label>
+                    <div>
+                      <input [(ngModel)]="model.persona.curp" id="curp" class="form-control " name="curp" type="text">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="pull-right">
+                    <div class="form-group">
+                      <br>
+                      <button onclick="" type="button" class="btn btn-default ">
+                        <span class="oi oi-undefined glyphicon glyphicon-undefined"></span>Buscar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="curp" class="control-label  ">Clave privada (.key):</label>
+                    <div>
+                      <input [(ngModel)]="model.persona.curp" id="curp" class="form-control " name="curp" type="text">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="pull-right">
+                    <div class="form-group">
+                      <br>
+                      <button onclick="" type="button" class="btn btn-default ">
+                        <span class="oi oi-undefined glyphicon glyphicon-undefined"></span>Buscar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="form-group">
+                    <label for="curp" class="control-label  ">RFC:</label>
+                    <div>
+                      <input [(ngModel)]="model.persona.curp" id="curp" class="form-control " name="curp" type="text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <label for="curp" class="control-label  ">Contraseña:</label>
+                      <div>
+                        <input [(ngModel)]="model.persona.curp" id="curp" class="form-control " name="curp" type="text">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="">
+              <div class="row">
+                <div class="col-md-8">
+                  <div id="buttongroup_undefined">
+                    <div class="pull-right">
+                      <button (click)="login()" class="btn btn-primary ">
+                        <span class="oi oi-undefined glyphicon glyphicon-undefined"></span>Ingresar
+                      </button><span> </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
