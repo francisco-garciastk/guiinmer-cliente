@@ -13,7 +13,9 @@ import { PageNotFoundComponent }   from './page-not-found/page-not-found.compone
 
 import { AppRoutingModule }        from './app-routing.module';
 import { MyCommonModule }              from './common/my.common.module';
+
 //import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CuestionarioComponent } from './proveedor/components/cuestionario/cuestionario.component';
 
 @NgModule({
   imports: [
@@ -28,6 +30,8 @@ import { MyCommonModule }              from './common/my.common.module';
     AppComponent,    
     LoginComponent,
     PageNotFoundComponent,
+    CuestionarioComponent
+    
     
   ],
   bootstrap: [ AppComponent ]
