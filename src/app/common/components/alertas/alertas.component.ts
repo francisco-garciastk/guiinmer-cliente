@@ -1,10 +1,11 @@
 // TODO: Feature Componetized like CrisisCenter
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Model } from "../../model";
-import { DataService } from "../../data.service";
-import { MensajeService } from "../services/mensaje.service";
-import { Mensaje } from "../domain/mensaje";
+import { AppState } from 'src/app/app.state';
+import { Mensaje } from '../../models/mensaje';
+import { DataService } from '../../service/data.service';
+import { MensajeService } from '../../service/mensaje.service';
+
 
 
 
@@ -14,7 +15,7 @@ import { Mensaje } from "../domain/mensaje";
 })
 export class AlertasComponent implements OnInit {
   
-  model : Model;
+  appState : AppState;
   
   @Input()
   mensaje : Mensaje;  
@@ -22,7 +23,7 @@ export class AlertasComponent implements OnInit {
   constructor(private data: DataService, private route: ActivatedRoute, private mensajeService:MensajeService) { }
 
   ngOnInit() {
-    this.data.currentMessage.subscribe(model => this.model = model );
+    this.data.currentMessage.subscribe(appState => this.appState = appState );
     //this.mensajeService.getMessage("MSG001").subscribe((mensaje : Mensaje) => this.mensaje = {...mensaje} );  
   }
   

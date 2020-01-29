@@ -1,24 +1,26 @@
 import { Injectable } from '@angular/core';
 import { Observable,BehaviorSubject } from 'rxjs';
-import { Model } from './model';
+import { AppState } from 'src/app/app.state';
+
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
 
-  private messageSource = new BehaviorSubject<Model>( new Model());
+  private messageSource = new BehaviorSubject<AppState>( new AppState());
   currentMessage = this.messageSource.asObservable();
   
-  model : Model = new Model();
+  appState : AppState = new AppState();
 
   constructor() { }
 
-  changeMessage(message: Model) {
+  changeMessage(message: AppState) {
     this.messageSource.next(message)
   }
   
-  getModel(): Observable<Model> {
+  getModel(): Observable<AppState> {
     return this.currentMessage;
   }
 

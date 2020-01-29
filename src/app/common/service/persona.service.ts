@@ -4,12 +4,13 @@ import { HttpHeaders } from '@angular/common/http';
 import {
   HttpEvent, HttpInterceptor, HttpHandler, HttpRequest, HttpErrorResponse
 } from '@angular/common/http';
-import { Persona } from '../domain/persona';
+import { Persona } from '../models/persona';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
-import { DataService } from "../../data.service";
-import { Model } from '../../model';
+
+import { DataService } from '../service/data.service';
+import { AppState } from 'src/app/app.state';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -25,21 +26,21 @@ const httpOptions = {
 export class PersonaService {
   endPointURL = "/personaFront-1.0/webresources/persona";
     
-  model : Model;
+  appState : AppState;
   
   constructor(private http: HttpClient, private data: DataService) {     
-    this.data.currentMessage.subscribe(model => this.model = model)
+    this.data.currentMessage.subscribe(appState => this.appState = appState)
   }
     
 
   getPersona( curp: string ){
     return this.http.post<Persona>( this.endPointURL, { curp: curp}, httpOptions )
     .pipe(
-      catchError(error => this.handleError( error, this.data, this.model ))
+      catchError(error => this.handleError( error, this.data, this.appState ))
     );
   }
   
-  private handleError(error: HttpErrorResponse, data: DataService, model : Model) {
+  private handleError(error: HttpErrorResponse, data: DataService, model : AppState) {
   
   console.log(this);  
   console.log(this.data);  

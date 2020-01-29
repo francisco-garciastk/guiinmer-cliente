@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { Model } from "../../model";
-import { Mensaje } from "../domain/mensaje";
-import { DataService } from "../../data.service";
-import { PersonaService } from "../../common/services/persona.service";
-import { Persona } from "../../common/domain/persona";
+import { DataService } from '../../service/data.service';
+import { AppState } from 'src/app/app.state';
+import { PersonaService } from '../../service/persona.service';
+import { Persona } from '../../models/persona.model';
+
 
 
 @Component({
@@ -14,14 +14,14 @@ import { Persona } from "../../common/domain/persona";
 })
 export class LoginComponent implements OnInit {
 
-  model : Model;  
+  appState : AppState;  
   constructor(
     private data: DataService,
     private router: Router,
     private personaService:PersonaService ) { }
 
   ngOnInit() {
-    this.data.currentMessage.subscribe(model => this.model = model)
+    this.data.currentMessage.subscribe(appState => this.appState = appState)
   }
   
   login(){
@@ -30,8 +30,8 @@ export class LoginComponent implements OnInit {
   }
   
   validarLogin( persona : Persona){
-    this.model.persona = {...persona};
-    if( this.model.persona.nombre !== null ){
+    this.appState.persona = {...persona};
+    if( this.appState.persona.nombre !== null ){
       this.router.navigate(['/proveedor/home', {  }]);
     }
   }

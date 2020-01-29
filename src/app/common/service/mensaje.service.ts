@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
-import { Mensaje } from '../domain/mensaje';
+import { Mensaje } from '../models/mensaje';
+
+import { DataService } from './data.service';
 
 const httpOptions = {
   headers: new HttpHeaders({

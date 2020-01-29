@@ -3,8 +3,9 @@ import { Observable } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Model } from "../../model";
-import { DataService } from "../../data.service";
+import { AppState } from 'src/app/app.state';
+import { DataService } from '../../service/data.service';
+
 
 
 @Component({
@@ -13,12 +14,12 @@ import { DataService } from "../../data.service";
 })
 export class UserProfileComponent implements OnInit {
   
-  model : Model;
+  appState : AppState;
 
   constructor(private data: DataService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.data.currentMessage.subscribe(model => this.model = model)    
+    this.data.currentMessage.subscribe(appState => this.appState = appState)    
   }
   
 }

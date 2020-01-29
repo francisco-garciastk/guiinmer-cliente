@@ -3,17 +3,14 @@ import { BrowserModule }  from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule }    from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { Router } from '@angular/router';
-
-import { DataService } from "./data.service";
 import { AppComponent }            from './app.component';
-import { LoginComponent }  from './common/login/login.component';
-import { PageNotFoundComponent }   from './page-not-found/page-not-found.component';
-
 import { AppRoutingModule }        from './app-routing.module';
 import { MyCommonModule }              from './common/my.common.module';
-//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProveedorModule } from './proveedor/provedor.module';
+import { LoginComponent } from './common/conteiners/login/login.component';
+import { PageNotFoundComponent } from './common/conteiners/page-not-found/page-not-found.component';
+
 
 @NgModule({
   imports: [
@@ -22,7 +19,8 @@ import { MyCommonModule }              from './common/my.common.module';
     BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
-    MyCommonModule    
+    MyCommonModule,
+    ProveedorModule    
   ],
   declarations: [
     AppComponent,    

@@ -1,11 +1,8 @@
 import { NgModule }       from '@angular/core';
 import { CommonModule }   from '@angular/common';
 import { FormsModule }    from '@angular/forms';
-
-import { UserProfileComponent }    from './user-profile/user.profile.component';
-import { AlertasComponent } from './alertas/alertas.component';
-
-
+import { AlertasComponent } from './components/alertas/alertas.component';
+import { UserProfileComponent } from './components/user-profile/user.profile.component';
 
 
 
@@ -13,10 +10,11 @@ import { AlertasComponent } from './alertas/alertas.component';
   imports: [ CommonModule
   ],
   exports:[
-    AlertasComponent
+    AlertasComponent,
+    UserProfileComponent
   ],
   declarations: [
-    //UserProfileComponent,
+    UserProfileComponent,
     AlertasComponent
   ]
 })

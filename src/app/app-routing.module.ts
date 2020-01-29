@@ -1,9 +1,10 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { LoginComponent }  from './common/login/login.component';
-import { PageNotFoundComponent }    from './page-not-found/page-not-found.component';
+
 import { SelectivePreloadingStrategyService } from './selective-preloading-strategy.service';
+import { LoginComponent } from './common/conteiners/login/login.component';
+import { PageNotFoundComponent } from './common/conteiners/page-not-found/page-not-found.component';
 
 const appRoutes: Routes = [
  /* {

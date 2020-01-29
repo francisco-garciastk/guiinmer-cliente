@@ -1,4 +1,4 @@
-<app-alertas [mensaje]="model.mensaje"></app-alertas>
+<app-alertas [mensaje]="appState.mensaje"></app-alertas>
 <div class="card panel form">
   <div class="card-body panel-body">
     <form id="FormPanelComponent-login" name="login" onsubmit="return false;">
@@ -14,7 +14,7 @@
                   <div class="form-group">
                     <label for="curp" class="control-label  ">Certificado (.cer):</label>
                     <div>
-                      <input [(ngModel)]="model.persona.curp" id="curp" class="form-control " name="curp" type="text">
+                      <input [(ngModel)]="appState.persona.curp" id="certificado" class="form-control " name="curp" type="text">
                     </div>
                   </div>
                 </div>
@@ -37,7 +37,7 @@
                   <div class="form-group">
                     <label for="curp" class="control-label  ">Clave privada (.key):</label>
                     <div>
-                      <input [(ngModel)]="model.persona.curp" id="curp" class="form-control " name="curp" type="text">
+                      <input [(ngModel)]="appState.persona.curp" id="private-key" class="form-control " name="curp" type="text">
                     </div>
                   </div>
                 </div>
@@ -60,7 +60,7 @@
                   <div class="form-group">
                     <label for="curp" class="control-label  ">RFC:</label>
                     <div>
-                      <input [(ngModel)]="model.persona.curp" id="curp" class="form-control " name="curp" type="text">
+                      <input [(ngModel)]="appState.persona.curp" id="rfc" class="form-control " name="curp" type="text">
                     </div>
                   </div>
                 </div>
@@ -73,7 +73,7 @@
                     <div class="form-group">
                       <label for="curp" class="control-label  ">Contraseña:</label>
                       <div>
-                        <input [(ngModel)]="model.persona.curp" id="curp" class="form-control " name="curp" type="text">
+                        <input [(ngModel)]="appState.persona.curp" id="pass" class="form-control " name="curp" type="text">
                       </div>
                     </div>
                   </div>

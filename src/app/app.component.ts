@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { slideInAnimation } from './animations';
-import { DataService } from "./data.service";
-import { Model } from "./model";
+
+import { AppState } from "./app.state";
+import { DataService } from './common/service/data.service';
 
 @Component({
   selector: 'app-root',
@@ -11,10 +12,10 @@ import { Model } from "./model";
   animations: [ slideInAnimation ]
 })
 export class AppComponent {
-  model : Model;
+  appState : AppState;
   constructor(private data: DataService){ }
   ngOnInit() {
-    this.model = this.data.model;    
+    this.appState = this.data.appState;    
   }
   getAnimationData(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
