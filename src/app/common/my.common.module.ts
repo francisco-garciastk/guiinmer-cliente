@@ -4,9 +4,7 @@ import { FormsModule }    from '@angular/forms';
 
 import { UserProfileComponent }    from './user-profile/user.profile.component';
 import { AlertasComponent } from './alertas/alertas.component';
-
-
-
+import { CotizacionComponent } from './cotizacion/cotizacion.component';
 
 
 @NgModule({
@@ -17,7 +15,9 @@ import { AlertasComponent } from './alertas/alertas.component';
   ],
   declarations: [
     //UserProfileComponent,
-    AlertasComponent
+    AlertasComponent,
+    CotizacionComponent,
+
   ]
 })
 export class MyCommonModule {}
