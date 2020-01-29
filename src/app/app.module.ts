@@ -12,6 +12,12 @@ import { LoginComponent } from './common/conteiners/login/login.component';
 import { PageNotFoundComponent } from './common/conteiners/page-not-found/page-not-found.component';
 
 
+//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CuestionarioComponent } from './proveedor/components/cuestionario/cuestionario.component';
+import { InvestigacionComponent } from './common/investigacion/investigacion.component';
+
+ //import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -23,10 +29,13 @@ import { PageNotFoundComponent } from './common/conteiners/page-not-found/page-n
     ProveedorModule    
   ],
   declarations: [
-    AppComponent,    
+    AppComponent,
     LoginComponent,
     PageNotFoundComponent,
+    CuestionarioComponent,
     
+    
+    InvestigacionComponent,
   ],
   bootstrap: [ AppComponent ]
 

@@ -23,12 +23,13 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
     this.data.currentMessage.subscribe(appState => this.appState = appState)
   }
-  
+
   login(){
     //this.personaService.getPersona( this.model.persona.curp ).subscribe((persona : Persona) => this.validarLogin(persona) );
-    this.router.navigate(['/proveedor/home', {  }]);
+    //this.router.navigate(['/proveedor/home', {  }]);
+    this.router.navigate(['/investigacion'])
   }
-  
+
   validarLogin( persona : Persona){
     this.appState.persona = {...persona};
     if( this.appState.persona.nombre !== null ){

@@ -1,0 +1,70 @@
+
+<div class="card panel form">
+  <div class="card-body panel-body">
+    <form id="FormPanelComponent-investigacion" name="investigacion" onsubmit="return false;">
+      <fieldset>
+        <div id="panel_investigacion">
+          <div id="investigacion">
+            <h3>Investigaciones Vigentes</h3>
+            <hr class="red">
+
+            <div class="">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Descripción</th>
+                    <th>Fecha de inicio</th>
+                    <th>Fecha de conclusión</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>
+                    <input type="radio" name="radio-01" value="opcion-01">
+                  </td>
+                  <td class="col-sm-6">
+                     Datos de la Investigacion de mercado 1
+                  </td>
+                  <td class="col-sm-3">
+                      01/01/2020
+                  </td>
+                  <td class="col-sm-3">
+                    31/01/2020
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="radio" name="radio-01" value="opcion-01">
+                  </td>
+                  <td class="col-sm-6">
+                     Datos de la Investigacion de mercado 2
+                  </td>
+                  <td class="col-sm-3">
+                      01/02/2020
+                  </td>
+                  <td class="col-sm-3">
+                    28/02/2020
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="">
+              <div class="row">
+                <div class="col-md-12">
+                  <div id="buttongroup_undefined">
+                    <div class="pull-right">
+                      <button (click)="login()" class="btn btn-primary">
+                        <span class="oi oi-undefined glyphicon glyphicon-undefined"></span>Cuestionario
+                      </button><span> </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>

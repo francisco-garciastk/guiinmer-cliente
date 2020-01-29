@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SelectivePreloadingStrategyService } from './selective-preloading-strategy.service';
 import { LoginComponent } from './common/conteiners/login/login.component';
 import { PageNotFoundComponent } from './common/conteiners/page-not-found/page-not-found.component';
+import { InvestigacionComponent } from './common/investigacion/investigacion.component';
 
 const appRoutes: Routes = [
  /* {
@@ -28,18 +29,22 @@ const appRoutes: Routes = [
     data: { preload: true }
   },*/
   { path: '',   component: LoginComponent, pathMatch: 'full' },
+
+  { path: 'investigacion' , component: InvestigacionComponent},
   { path: '**', component: PageNotFoundComponent }
+
+
 ];
 
 @NgModule({
-  imports: [    
+  imports: [
     RouterModule.forRoot(
       appRoutes,
       {
         enableTracing: false, // <-- debugging purposes only
         preloadingStrategy: SelectivePreloadingStrategyService,
       }
-    )    
+    )
   ],
   declarations:[],
   exports: [
