@@ -13,7 +13,9 @@ import { PageNotFoundComponent }   from './page-not-found/page-not-found.compone
 
 import { AppRoutingModule }        from './app-routing.module';
 import { MyCommonModule }              from './common/my.common.module';
-//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { InvestigacionComponent } from './common/investigacion/investigacion.component';
+
+ //import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
@@ -22,13 +24,13 @@ import { MyCommonModule }              from './common/my.common.module';
     BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
-    MyCommonModule    
+    MyCommonModule
   ],
   declarations: [
-    AppComponent,    
+    AppComponent,
     LoginComponent,
     PageNotFoundComponent,
-    
+    InvestigacionComponent,
   ],
   bootstrap: [ AppComponent ]
 
