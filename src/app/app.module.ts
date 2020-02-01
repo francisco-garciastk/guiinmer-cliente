@@ -7,16 +7,10 @@ import { Router } from '@angular/router';
 import { AppComponent }            from './app.component';
 import { AppRoutingModule }        from './app-routing.module';
 import { MyCommonModule }              from './common/my.common.module';
-import { ProveedorModule } from './proveedor/provedor.module';
+import { ProveedorModule } from './proveedor/proveedor.module';
 import { LoginComponent } from './common/conteiners/login/login.component';
 import { PageNotFoundComponent } from './common/conteiners/page-not-found/page-not-found.component';
 
-
-//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CuestionarioComponent } from './proveedor/components/cuestionario/cuestionario.component';
-import { InvestigacionComponent } from './common/investigacion/investigacion.component';
-
- //import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
@@ -31,11 +25,7 @@ import { InvestigacionComponent } from './common/investigacion/investigacion.com
   declarations: [
     AppComponent,
     LoginComponent,
-    PageNotFoundComponent,
-    CuestionarioComponent,
-    
-    
-    InvestigacionComponent,
+    PageNotFoundComponent
   ],
   bootstrap: [ AppComponent ]
 

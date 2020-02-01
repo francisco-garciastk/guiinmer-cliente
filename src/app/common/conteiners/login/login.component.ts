@@ -25,9 +25,7 @@ export class LoginComponent implements OnInit {
   }
 
   login(){
-    //this.personaService.getPersona( this.model.persona.curp ).subscribe((persona : Persona) => this.validarLogin(persona) );
-    //this.router.navigate(['/proveedor/home', {  }]);
-    this.router.navigate(['/investigacion'])
+    this.router.navigate(['/proveedor/investigacion'])
   }
 
   validarLogin( persona : Persona){
