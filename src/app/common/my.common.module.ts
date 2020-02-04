@@ -3,7 +3,6 @@ import { CommonModule }   from '@angular/common';
 import { FormsModule }    from '@angular/forms';
 
 
-import { CotizacionComponent } from './cotizacion/cotizacion.component';
 import { AlertasComponent } from './components/alertas/alertas.component';
 import { UserProfileComponent } from './components/user-profile/user.profile.component';
 
@@ -18,7 +17,6 @@ import { UserProfileComponent } from './components/user-profile/user.profile.com
   declarations: [
     UserProfileComponent,
     AlertasComponent,
-    CotizacionComponent,
 
   ]
 })

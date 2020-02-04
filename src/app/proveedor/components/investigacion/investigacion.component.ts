@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { DataService } from 'src/app/common/service/data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-investigacion',
@@ -9,14 +10,15 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 export class InvestigacionComponent implements OnInit {
 
   constructor(
-      private router: Router,
-  ) { }
+    private data: DataService,
+    private router: Router){
+      
+    }
 
   ngOnInit() {
   }
 
-  cotizacion(){
-      this.router.navigate(['/cotizacion'])
+  navegarCuestionario(){
+    this.router.navigate(['/proveedor/cuestionario'])
   }
-
 }
