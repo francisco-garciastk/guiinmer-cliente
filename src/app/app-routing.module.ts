@@ -30,13 +30,7 @@ const appRoutes: Routes = [
     data: { preload: false }
   },
 
-
-<<<<<<< HEAD
-  { path: 'investigacion' , component: InvestigacionComponent},
-  { path: 'cotizacion' , component: CotizacionComponent},
-=======
   { path: '',   component: LoginComponent, pathMatch: 'full' },  
->>>>>>> 2a361735584f5e11beab8dae485549e359069bb1
   { path: '**', component: PageNotFoundComponent }
 
 
