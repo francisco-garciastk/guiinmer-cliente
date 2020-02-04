@@ -6,6 +6,7 @@ import { SelectivePreloadingStrategyService } from './selective-preloading-strat
 import { LoginComponent } from './common/conteiners/login/login.component';
 import { PageNotFoundComponent } from './common/conteiners/page-not-found/page-not-found.component';
 import { InvestigacionComponent } from './common/investigacion/investigacion.component';
+import { CotizacionComponent } from './common/cotizacion/cotizacion.component';
 
 const appRoutes: Routes = [
  /* {
@@ -31,6 +32,7 @@ const appRoutes: Routes = [
   { path: '',   component: LoginComponent, pathMatch: 'full' },
 
   { path: 'investigacion' , component: InvestigacionComponent},
+  { path: 'cotizacion' , component: CotizacionComponent},
   { path: '**', component: PageNotFoundComponent }
 
 
