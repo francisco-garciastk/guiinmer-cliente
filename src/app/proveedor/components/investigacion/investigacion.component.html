@@ -39,7 +39,15 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
+                        <tr *ngFor="let investigacion of investigaciones">
+                          <td>
+                            <input type="radio" name="radio-01" value="opcion-01">
+                          </td>
+                          <td class="col-sm-6">{{ investigacion.descripcion }}</td>
+                          <td class="col-sm-3">{{ investigacion.fechaApertura }}</td>
+                          <td class="col-sm-3">{{ investigacion.fechaCierre }}</td>                          
+                        </tr>
+                      <!-- <tr>
                         <td>
                           <input type="radio" name="radio-01" value="opcion-01">
                         </td>
@@ -178,7 +186,7 @@
                         <td class="col-sm-3">
                           28/02/2020
                         </td>
-                      </tr>
+                      </tr> -->
                     </tbody>
                   </table>
                 </div>
