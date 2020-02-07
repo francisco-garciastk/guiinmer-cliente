@@ -44,6 +44,6 @@ export class InvestigacionComponent implements OnInit {
   }
 
   navegarCuestionario(){
-    this.router.navigate(['/proveedor/cuestionario'])
+    this.router.navigate(['/proveedor/detalle']);
   }
 }

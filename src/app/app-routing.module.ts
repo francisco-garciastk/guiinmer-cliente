@@ -1,9 +1,8 @@
-import { NgModule }             from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 
 import { SelectivePreloadingStrategyService } from './selective-preloading-strategy.service';
-import { LoginComponent } from './common/conteiners/login/login.component';
 import { PageNotFoundComponent } from './common/conteiners/page-not-found/page-not-found.component';
 import { InvestigacionComponent } from './proveedor/components/investigacion/investigacion.component';
 
@@ -30,7 +29,7 @@ const appRoutes: Routes = [
     data: { preload: false }
   },
 
-  { path: '',   component: LoginComponent, pathMatch: 'full' },  
+  { path: '',   component: InvestigacionComponent, pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 
 

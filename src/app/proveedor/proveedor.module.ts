@@ -5,6 +5,8 @@ import { CotizacionComponent } from './components/cotizacion/cotizacion.componen
 import { InvestigacionComponent } from './components/investigacion/investigacion.component';
 import { CuestionarioComponent } from './components/cuestionario/cuestionario.component';
 import { ProveedorRoutingModule } from './proveedor-routing.module';
+import { DetalleImComponent } from './conteiners/detalle-im/detalle-im.component';
+import { EFirmaComponent } from './conteiners/e-firma/e-firma.component';
 
 
 
@@ -18,6 +20,8 @@ import { ProveedorRoutingModule } from './proveedor-routing.module';
     RegistroProveedorComponent,
     CotizacionComponent,
     InvestigacionComponent,
-    CuestionarioComponent]
+    CuestionarioComponent,
+    DetalleImComponent,
+    EFirmaComponent]
 })
 export class ProveedorModule { }
