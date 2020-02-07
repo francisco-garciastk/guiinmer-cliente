@@ -12,12 +12,8 @@
                   <label>Rubro:</label>
                 </div>
                 <div class="col-md-3">
-                  <select class="form-control">
-                    <option>Selecciona una opción</option>
-                    <option>Bienes</option>
-                    <option>Servicios</option>
-                    <option>Obras</option>
-                    <option>Servivios por obra</option>
+                  <select name="miselect" >
+                      <option *ngFor="let objeto of areas">{{objeto.descripcion}}</option>
                   </select>
                 </div>
               </div>
