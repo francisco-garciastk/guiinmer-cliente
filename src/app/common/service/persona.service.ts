@@ -10,7 +10,8 @@ import { catchError, retry } from 'rxjs/operators';
 
 
 import { DataService } from '../service/data.service';
-import { AppState } from 'src/app/app.state';
+import { AppState } from '../../app.state';
+
 
 const httpOptions = {
   headers: new HttpHeaders({

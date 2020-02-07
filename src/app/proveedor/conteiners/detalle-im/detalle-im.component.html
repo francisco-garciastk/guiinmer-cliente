@@ -1,0 +1,70 @@
+<div class="top-buffer col-md-12">
+    <form class="form" id="detalleForm" name="detalle" onsubmit="return false;">
+        <div id="detalle-im">
+            <h3>Detalle investigación de mercado</h3>
+            <hr class="red">
+        </div>
+        <div class="row col-md-10">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Descripción</th>
+                        <th>Fecha de inicio</th>
+                        <th>Fecha de conclusión</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="">
+                            Datos de la Investigacion de mercado 1
+                        </td>
+                        <td class="">
+                            01/01/2020
+                        </td>
+                        <td class="">
+                            31/01/2020
+                        </td>
+                </tbody>
+            </table>
+        </div>
+        <div class="row col-md-10">
+            <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+            <button type="button" class="btn btn-link">Descargar Documentación Técnica</button>
+        </div>
+        <div class="row col-md-10">
+            <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+            <button type="button" class="btn btn-link">Consulta Dudas y Respuestas</button>
+        </div>
+
+        <div class=" row top-buffer col-md-12">
+            <h3>Comenzar con código de participación</h3>
+            <hr class="red">
+        </div>
+        <div class="row col-md-8">
+            <div class="form-group">
+                <label class="control-label" for="email">Correo electrónico*:</label>
+                <input class="form-control" id="email" placeholder="Correo electrónico" type="text">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="codigo">Código*:</label>
+                <input class="form-control" id="codigo" placeholder="Código" type="text">
+                <br>
+                <a>Reenviar código de participación</a>
+                <br>
+                <label class="control-label">* Campos obligatorios</label>
+            </div>
+            <div class="pull-right">
+                <button class="btn btn-primary">Acceder
+                    <span class="icon-tramite"></span>
+                </button>
+
+            </div>
+        </div>
+        <div class="row col-md-10 bottom-buffer">
+            <br>
+            <a [routerLink]="['e-firma']">¿No cuentas con código de participación?</a>
+        </div>
+
+
+    </form>
+</div>
