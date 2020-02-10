@@ -13,7 +13,7 @@ const proveedorRoutes: Routes = [
     { path: 'cuestionario', component: CuestionarioComponent },
     { path: 'investigacion',   component: InvestigacionComponent},
     { path: 'detalle',   component: DetalleImComponent},
-    { path: 'e-firma',   component: EFirmaComponent},
+    { path: 'efirma',   component: EFirmaComponent},
     { path: '',   component: InvestigacionComponent},
 
 ];
