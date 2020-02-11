@@ -3,17 +3,31 @@
         <fieldset>
             <div id="panel_investigacion">
                 <div id="investigacion">
-                    <h3>Investigaciones Vigentes</h3>
-                    <hr class="red">
+                    <h3>Investigaciones de mercado vigentes</h3>
+                    <hr class="red" style="margin-bottom: 35px;">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-md-9" style="margin-bottom: 35px;">
+                                <label>
+                                  Bienvenido(a), elige el rubro y
+                                  la investigación de mercado que deseas
+                                  consultar y selecciona el botón ver
+                                  detalle para continuar.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                     <div class="">
                         <div class="row">
                             <div class="col-md-1">
                                 <label>Rubro:</label>
                             </div>
                             <div class="col-md-3">
-                                <select name="miselect">
-                      <option *ngFor="let objeto of areas">{{objeto.descripcion}}</option>
-                  </select>
+                                <select  name="miselect">
+                                  <option *ngFor="let objeto of areas">
+                                    {{objeto.descripcion}}
+                                  </option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -21,7 +35,7 @@
             <div class="">
               <div class="row">
                 <div class="col-md-9">
-                  <hr>
+
                 </div>
               </div>
             </div>
@@ -71,7 +85,7 @@
                                 <div id="buttongroup_undefined">
                                     <div class="pull-right">
                                         <button (click)="navegarCuestionario()" class="btn btn-primary">
-                        <span class="oi oi-undefined glyphicon glyphicon-undefined"></span>Ver Detalle
+                        <span class="oi oi-undefined glyphicon glyphicon-undefined"></span>Ver detalle
                       </button><span> </span>
                                     </div>
                                 </div>

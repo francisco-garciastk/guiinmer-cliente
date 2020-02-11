@@ -13,6 +13,8 @@ import { Investigacion } from 'src/app/common/models/investigacion';
 })
 export class InvestigacionComponent implements OnInit {
 
+   opcionSeleccionado : number = 0;
+
   // areas : Area[];
   areas: Array<Area> = [
     {id: 0, descripcion: 'Seleccione una opción'},
@@ -23,7 +25,6 @@ export class InvestigacionComponent implements OnInit {
   ];
 
   investigaciones: Array<Investigacion> = [
-    {id: 0, descripcion: 'Seleccione una opción', fechaApertura:'',fechaCierre:''},
     {id: 1, descripcion: 'Datos de la Investigacion de mercado 1', fechaApertura:'01/01/2020', fechaCierre:'31/01/2020'},
     {id: 2, descripcion: 'Datos de la Investigacion de mercado 2', fechaApertura:'01/01/2020', fechaCierre:'31/01/2020'},
     {id: 3, descripcion: 'Datos de la Investigacion de mercado 3', fechaApertura:'01/01/2020', fechaCierre:'31/01/2020'},
