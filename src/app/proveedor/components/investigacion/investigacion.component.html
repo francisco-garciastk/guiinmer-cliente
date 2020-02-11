@@ -5,25 +5,20 @@
                 <div id="investigacion">
                     <h3>Investigaciones de mercado vigentes</h3>
                     <hr class="red" style="margin-bottom: 35px;">
-                    <div class="">
-                        <div class="row">
-                            <div class="col-md-9" style="margin-bottom: 35px;">
-                                <label>
-                                  Bienvenido(a), elige el rubro y
-                                  la investigación de mercado que deseas
-                                  consultar y selecciona el botón ver
-                                  detalle para continuar.
-                                </label>
-                            </div>
+
+                    <div class="row col-md-12">
+                        <div class="alert alert-info">Bienvenido(a), elige el rubro y la investigación de mercado que deseas consultar y selecciona el botón ver detalle para continuar.
                         </div>
                     </div>
                     <div class="">
                         <div class="row">
                             <div class="col-md-1">
+                                <br>
                                 <label>Rubro:</label>
                             </div>
                             <div class="col-md-3">
-                                <select  name="miselect">
+                                <br>
+                                <select name="miselect">
                                   <option *ngFor="let objeto of areas">
                                     {{objeto.descripcion}}
                                   </option>
@@ -32,39 +27,41 @@
                         </div>
                     </div>
 
-            <div class="">
-              <div class="row">
-                <div class="col-md-9">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-md-9">
 
-                </div>
-              </div>
-            </div>
-            <div class="">
-              <div class="row">
-                <div class="col-md-9">
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th></th>
-                        <th>Descripción</th>
-                        <th>Fecha de inicio</th>
-                        <th>Fecha de conclusión</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                        <tr *ngFor="let investigacion of investigaciones">
-                          <td>
-                            <input type="radio" name="radio-01" value="opcion-01">
-                          </td>
-                          <td class="col-sm-6">{{ investigacion.descripcion }}</td>
-                          <td class="col-sm-3">{{ investigacion.fechaApertura }}</td>
-                          <td class="col-sm-3">{{ investigacion.fechaCierre }}</td>
-                        </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <br>
+                                <br>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Descripción</th>
+                                            <th>Fecha de inicio</th>
+                                            <th>Fecha de conclusión</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let investigacion of investigaciones">
+                                            <td>
+                                                <input type="radio" name="radio-01" value="opcion-01">
+                                            </td>
+                                            <td class="col-sm-6">{{ investigacion.descripcion }}</td>
+                                            <td class="col-sm-3">{{ investigacion.fechaApertura }}</td>
+                                            <td class="col-sm-3">{{ investigacion.fechaCierre }}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="">
                         <div class="row">

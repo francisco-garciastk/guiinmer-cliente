@@ -1,7 +1,7 @@
 <div class="top-buffer col-md-12">
     <form class="form" id="detalleForm" name="detalle" onsubmit="return false;">
         <div id="detalle-im">
-            <h3>Detalle investigación de mercado</h3>
+            <h3>Detalle de la investigación de mercado</h3>
             <hr class="red">
         </div>
         <div class="row col-md-10">
@@ -28,17 +28,21 @@
             </table>
         </div>
         <div class="row col-md-10">
-            <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
-            <button type="button" class="btn btn-link">Descargar Documentación Técnica</button>
+            <span class="glyphicon glyphicon-save" aria-hidden="true"></span>
+            <button type="button" class="btn btn-link btn_link_underline">Descargar documentación técnica</button>
         </div>
         <div class="row col-md-10">
             <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
-            <button type="button" class="btn btn-link">Consulta Dudas y Respuestas</button>
+            <button type="button" class="btn btn-link btn_link_underline">Consulta dudas y respuestas</button>
         </div>
 
         <div class=" row top-buffer col-md-12">
             <h3>Comenzar con código de participación</h3>
             <hr class="red">
+        </div>
+        <div class="row col-md-12">
+            <div class="alert alert-info">Si ya cuentas con un código de participación, ingresa el correo electrónico al que se te envío y el código exacto (sensible a mayúsculas y minúsculas).
+            </div>
         </div>
         <div class="row col-md-8">
             <div class="form-group">
@@ -48,17 +52,14 @@
             <div class="form-group">
                 <label class="control-label" for="codigo">Código*:</label>
                 <input class="form-control" id="codigo" placeholder="Código" type="text">
-                <br>
-                <a>Reenviar código de participación</a>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn_sc btn-link">Reenviar código de participación</button>
+                <button class="btn btn-primary pull-right">Acceder</button>
                 <br>
                 <label class="control-label">* Campos obligatorios</label>
             </div>
-            <div class="pull-right">
-                <button class="btn btn-primary">Acceder
-                    <span class="icon-tramite"></span>
-                </button>
 
-            </div>
         </div>
         <div class="row col-md-10 bottom-buffer">
             <br>
