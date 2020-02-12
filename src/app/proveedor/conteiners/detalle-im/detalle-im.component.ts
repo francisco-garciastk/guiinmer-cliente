@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
+import { DetalleIMService } from '../../service/detalle-im.service';
+import { Investigacion } from 'src/app/common/models/investigacion';
 
 @Component({
   selector: 'app-detalle-im',
@@ -8,9 +10,18 @@ import { Router } from '@angular/router';
 })
 export class DetalleImComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  detIM: any = {};
+  
+  constructor(private router: Router,
+              private actRoute: ActivatedRoute,
+              private detalleService: DetalleIMService) {
+  }
 
   ngOnInit() {
+    this.actRoute.params.subscribe( params => {
+      this.detIM = this.detalleService.getDetalleIM( params['id']);
+      console.log(this.detIM);
+    });
   }
 
   irEFirma() {

@@ -12,7 +12,7 @@ import { EFirmaComponent } from './conteiners/e-firma/e-firma.component';
 const proveedorRoutes: Routes = [
     { path: 'cuestionario', component: CuestionarioComponent },
     { path: 'investigacion',   component: InvestigacionComponent},
-    { path: 'detalle',   component: DetalleImComponent},
+    { path: 'detalle/:id',   component: DetalleImComponent},
     { path: 'efirma',   component: EFirmaComponent},
     { path: '',   component: InvestigacionComponent},
 

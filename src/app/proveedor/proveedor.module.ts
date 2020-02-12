@@ -7,6 +7,13 @@ import { CuestionarioComponent } from './components/cuestionario/cuestionario.co
 import { ProveedorRoutingModule } from './proveedor-routing.module';
 import { DetalleImComponent } from './conteiners/detalle-im/detalle-im.component';
 import { EFirmaComponent } from './conteiners/e-firma/e-firma.component';
+import { FormsModule } from '@angular/forms';
+
+
+//Service
+import { DetalleIMService } from './service/detalle-im.service';
+
+
 
 
 
@@ -14,7 +21,8 @@ import { EFirmaComponent } from './conteiners/e-firma/e-firma.component';
 @NgModule({
   imports: [
     CommonModule,
-    ProveedorRoutingModule
+    ProveedorRoutingModule,
+    FormsModule
   ],
   declarations: [
     RegistroProveedorComponent,
@@ -22,6 +30,9 @@ import { EFirmaComponent } from './conteiners/e-firma/e-firma.component';
     InvestigacionComponent,
     CuestionarioComponent,
     DetalleImComponent,
-    EFirmaComponent]
+    EFirmaComponent],
+    providers: [
+      DetalleIMService
+    ]
 })
 export class ProveedorModule { }

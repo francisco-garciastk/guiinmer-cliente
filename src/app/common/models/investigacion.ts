@@ -2,6 +2,6 @@ export class Investigacion {
 
   id: number;
   descripcion: string;
-  fechaApertura : string;
-  fechaCierre : string;
+  fechaApertura: string;
+  fechaCierre: string;
 }
